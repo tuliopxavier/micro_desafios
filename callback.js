@@ -10,3 +10,12 @@ function parar() { return 'O carro parou'; }
 
 acaoCarro(andar());
 acaoCarro(parar());
+
+
+
+// let acaoCarro = (acao) => acao();
+// function andar() { console.log('O carro está andando'); }
+// function parar() { console.log('O carro parou'); }
+
+// acaoCarro(andar);
+// acaoCarro(parar);

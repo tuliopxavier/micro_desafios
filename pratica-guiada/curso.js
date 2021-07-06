@@ -38,7 +38,10 @@ const curso = {
         }   else { return false; }
     },
     verificarAprovacao: function() {
-        console.log(curso.listaDeEstudantes.map( item => this.aprovacao(item)));
+        return this.listaDeEstudantes.reduce((acc, item) => {
+            console.log(acc[item.nome] = this.aprovacao(item));
+        }, {});
+        // console.log(curso.listaDeEstudantes.map( item => this.aprovacao(item)));
     }
 };
 
@@ -48,6 +51,4 @@ curso.adicionarAluno(larissa);
 curso.adicionarAluno(paulo);
 curso.adicionarAluno(cabuto);
 
-console.log(curso.listaDeEstudantes);
-
-curso.verificarAprovacao();
+console.log(curso.verificarAprovacao());
